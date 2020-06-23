@@ -1,8 +1,15 @@
-{% extends 'core/base.html' %}
+{%extends 'core/base.html'%}
+
+{% block background %}{% load static %}{% static 'core/img/home-bg.jpg' %}{% endblock %}
+
 {% block title %}
-<title>Acerca de | my web personal</title>
+    <title>Acerca de | my web personal</title>
 {% endblock title %}
-<h1>Soy programador y analista de datos</h1>
+
+{% block header %}
+    <h1>Edison Santana</h1>
+    <span class="subheading">Python developer | Data Analyst</span>
+{% endblock header %}
 
 {% block content %}
 <h2>about page</h2>
