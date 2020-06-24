@@ -18,6 +18,8 @@ from django.urls import path
 from core.views import home
 import core.views as views
 
+from django.conf import settings #this option here is not default, it is just to showing images in developing stage
+
 urlpatterns = [
     path('admin/', admin.site.urls,name='admin'),
     path('about/', views.about,name='about'),
@@ -25,3 +27,7 @@ urlpatterns = [
     path('portafolio/', views.portafolio,name='portfolio'),
     path('',home,name='home'),
 ]
+
+if settings.DEBUG: #this option here is not default, it is just to showing images in developing stage
+    from django.conf.urls.static import static
+    urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
