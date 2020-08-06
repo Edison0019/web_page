@@ -3,12 +3,12 @@
 {% block background %}{% load static %}{% static 'core/img/portfolio-bg.jpg' %}{% endblock %}
 
 {% block title %}
-    <title>Portafolio | my web personal</title>
+    <title>Portfolio | Personal Letter</title>
 {% endblock title %}
 
 {% block header %}
-    <h1>Portafolio</h1>
-    <span class="subheading">Currículo</span>
+    <h1>Portfolio</h1>
+    <span class="subheading">CV</span>
 {% endblock header %}
 
 {% block content %}
@@ -23,7 +23,7 @@
         <h2 class="section-heading title">{{elem.title}}</h2>   
         <p>{{elem.description}}</p>
         {% if elem.link %} <!-- this checks if exists a value by default -->
-            <p><a href="{{elem.link}}">Más información</a></p>
+            <p><a href="{{elem.link}}">More information</a></p>
         {% endif %}
     </div>
     </div>
