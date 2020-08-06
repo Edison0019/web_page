@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\ediso\OneDrive\Escritorio\original\env"
+VIRTUAL_ENV="C:\Users\ediso\web_page\env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
