@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = ')c7elm&3*&gk6)3k#50fezb8e-2k7^i3()iak)sj21=md0srs9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['webcv.pythonanywhere.com','localhost','127.0.0.1']
 
 
 # Application definition
